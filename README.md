@@ -2,6 +2,12 @@
 
 ![Loop visual do Cardápio](assets/cardapio-loop.svg)
 
+## Demonstração funcional
+
+O repositório contém uma interface estática de cardápio com filtros por categoria e sacola mantida somente durante a sessão da página. Os itens e valores são ilustrativos: não há integração de pedidos, pagamento, coleta de dados pessoais ou operação de estabelecimento real.
+
+Para abrir localmente, sirva a pasta com um servidor estático de sua preferência e acesse `index.html`.
+
 <p align="center">
   <img src="assets/cardapio-hero.png" alt="Ilustração de um cardápio digital em desenvolvimento" width="100%" />
 </p>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demonstração estática de cardápio digital com filtros e sacola local.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="x-project-provenance" content="github.com/LEVIATAD21/cardapio">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'">
+  <meta name="theme-color" content="#1f3429">
+  <title>Cardápio — demonstração digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#menu">Ir para o cardápio</a>
+  <header class="topbar">
+    <a class="wordmark" href="#inicio" aria-label="Cardápio, início"><span aria-hidden="true">C.</span> Cardápio</a>
+    <a class="cart-link" href="#sacola">Sacola <b id="cartCount">0</b></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div>
+        <p class="kicker">INTERFACE DE DEMONSTRAÇÃO</p>
+        <h1>Um cardápio que deixa o pedido mais simples.</h1>
+        <p>Esta é uma vitrine local para portfólio: você pode filtrar itens e montar uma sacola, mas nenhum dado, pedido ou pagamento é enviado.</p>
+        <a class="primary-button" href="#menu">Ver cardápio</a>
+      </div>
+      <div class="hero-illustration" aria-hidden="true"><i></i><i></i><i></i><span>MENU</span></div>
+    </section>
+
+    <section class="menu-section" id="menu" aria-labelledby="menuTitle">
+      <div class="section-heading"><div><p class="kicker">ESCOLHA SEU RITMO</p><h2 id="menuTitle">Itens demonstrativos</h2></div><p>Os dados abaixo são exemplos de interface e não representam um estabelecimento, disponibilidade ou preço real.</p></div>
+      <div class="filter-bar" role="group" aria-label="Categorias"><button class="filter is-active" data-category="Todos" aria-pressed="true">Todos</button><button class="filter" data-category="Entradas" aria-pressed="false">Entradas</button><button class="filter" data-category="Pratos" aria-pressed="false">Pratos</button><button class="filter" data-category="Bebidas" aria-pressed="false">Bebidas</button></div>
+      <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="basket" id="sacola" aria-labelledby="basketTitle">
+      <div><p class="kicker">SACOLA LOCAL</p><h2 id="basketTitle">Seu resumo</h2><p id="basketMessage">Adicione itens para conferir a composição da sacola.</p></div>
+      <div class="basket-card"><ul id="basketItems"></ul><div class="total"><span>Total demonstrativo</span><strong id="basketTotal">R$ 0,00</strong></div><button id="summaryButton" class="dark-button" type="button">Gerar resumo local</button></div>
+    </section>
+    <p class="status" id="status" role="status" aria-live="polite">Nenhum dado é coletado nesta demonstração.</p>
+  </main>
+  <footer>Cardápio digital demonstrativo · interface local para portfólio</footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
