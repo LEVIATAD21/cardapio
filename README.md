@@ -1,5 +1,7 @@
 # Cardápio
 
+![Loop visual do Cardápio](assets/cardapio-loop.svg)
+
 <p align="center">
   <img src="assets/cardapio-hero.png" alt="Ilustração de um cardápio digital em desenvolvimento" width="100%" />
 </p>
