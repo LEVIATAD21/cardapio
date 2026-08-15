@@ -1,6 +1,6 @@
 # Cardápio
 
-![Loop visual do Cardápio](assets/cardapio-loop.svg)
+![Demonstração animada do fluxo de seleção de item e atualização da sacola](assets/cardapio-motion.gif)
 
 ## Demonstração funcional
 
