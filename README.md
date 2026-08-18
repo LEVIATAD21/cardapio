@@ -1,3 +1,5 @@
+![Motion Banner](assets/motion-banner.gif)
+
 # Cardápio
 
 ![Demonstração animada do fluxo de seleção de item e atualização da sacola](assets/cardapio-motion.gif)
